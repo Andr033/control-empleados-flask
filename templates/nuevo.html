@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Añadir Empleados</title>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                user-select: none;
+            }
+            body {
+                font-family: "Courier New", monospace;
+                background: linear-gradient(60deg, rgb(0, 0, 0), rgb(255, 255, 255));
+                padding: 40px;
+            }
+            .card {
+                max-width: 400px;
+                margin: 0 auto;
+                border-radius: 10px;
+                padding: 30px 40px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+                height: 300px;
+            }
+            h1{
+                text-align: center;
+                color:white;
+                border-radius: 15px;
+                padding: 5px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+            }
+            label {
+
+                margin: 0 auto;
+                padding: 10px;
+                color: white;
+            }
+            input {
+                background-color: rgba(0, 0, 0, 0.43);
+                border-radius: 8px;
+                margin: 2px;
+                width: 100%;
+                color: white;
+            }
+            button {
+                display: inline-block;
+                margin-top: 15px;
+                padding: 5px;
+                border-radius: 10px;
+                background: rgba(0,0,0,0);
+                color: white;
+                box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.59);
+            }
+            button:hover {
+                background: rgba(255, 252, 252, 0.93);
+                color: black;
+            }
+            a {
+                display: inline-block;
+                background-color: rgba(105, 105, 105, 0.85);
+                margin-top: 20px;
+                padding: 10px;
+                border-radius: 6px;
+                color: white;
+                text-decoration: none;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.44);
+            }
+            a:hover {
+                background-color: #ffffff;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>Nuevo empleado</h1>
+            <form method="POST">
+                <label>Nombre</label>
+                <input type="text" name="nombre" required>
+                <label>Departamento</label>
+                <input type="text" name="departamento" required>
+                <label>Salario</label>
+                <input type="number" step="0.01" name="salario" required>
+                <button type="submit">Aplicar</button>
+            </form>
+            <a href="/">&larr; Inicio</a>
+        </div>
+    </body>
+</html>
