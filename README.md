@@ -23,7 +23,7 @@ Antes de instalar el proyecto, asegúrate de tener instalado:
 Puedes clonar el repositorio usando Git:
 
 ```bash
-git clone <URL_DE_TU_REPOSITORIO>
+git clone https://github.com/Andr033/control-empleados-flask.git
 cd <NOMBRE_DE_LA_CARPETA>
 ```
 Si tienes el proyecto en un archivo ZIP, simplemente extráelo y abre una terminal dentro de la carpeta del proyecto.
